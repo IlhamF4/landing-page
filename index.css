@@ -8,13 +8,13 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #1f2937;
-  padding: 16px 48px 48px 48px;
+  padding: 16px 60px 32px 60px;
 }
 
 .header, ul, .hero-container, 
 .content-container, .footer,
 .information-container, .card-container,
-.card{
+.card, .quote-container, .quote-card{
   display: flex;
 }
 
@@ -39,8 +39,8 @@ a {
 }
 
 .hero-container {
-  margin-top: 32px;
   justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .main-text {
@@ -76,12 +76,12 @@ button {
 .content-container {
   flex: 1;
   justify-content: center;
+  flex-direction: column;
 }
 
 .information-container {
   flex-direction: column;
   align-items: center;
-  width: 800px;
 }
 
 .title {
@@ -111,6 +111,26 @@ button {
   height: 100px;
   padding: 16px;
   margin-bottom: 8px;
+}
+
+.quote-container {
+  background-color: #e5e7eb;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quote {
+  font-size: 36px;
+  font: light italic;
+  color: #1f2937;
+}
+
+.quote-card {
+  flex-direction: column;
+}
+
+.quote-author {
+  margin-left: auto;
 }
 
 .footer {
